@@ -17,9 +17,27 @@
         //Eigen acties
         spaceShip.run(function () {
             // code  start
-
-
-
+            for(var i = 0; i < 6; i++)
+            {
+                if(i%2 == 0)
+                {
+                    spaceShip.rotateLeft();
+                    spaceShip.moveForward();
+                    spaceShip.rotateLeft();
+                    for (var j = 0; j < 7; j++) {
+                        spaceShip.moveForward();
+                    }
+                }
+                else
+                {
+                    spaceShip.rotateRight();
+                    spaceShip.moveForward();
+                    spaceShip.rotateRight();
+                    for (var j = 0; j < 7; j++) {
+                        spaceShip.moveForward();
+                    }
+                }
+            }
             // code  einde
         });
     </script>
