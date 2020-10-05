@@ -19,7 +19,30 @@
             // code  start
             spaceShip.rotateRight();
             spaceShip.moveForward();
+            for (var i = 0; i < 6; i++) 
+            {
+                if (i%2 == 0) 
+                {
+                    for (var j = 0; j < 3; j++) 
+                    {
+                        spaceShip.moveForward();
+                    }
+                    spaceShip.rotateRight();
+                    spaceShip.moveForward();
+                    spaceShip.rotateRight();
+                }
+                else
+                {
+                    for (var j = 0; j < 3; j++) 
+                    {
+                        spaceShip.moveForward();
+                    }
+                    spaceShip.rotateLeft();
+                    spaceShip.moveForward();
+                    spaceShip.rotateLeft();
+                }
 
+            }
             // code  einde
         });
     </script>
